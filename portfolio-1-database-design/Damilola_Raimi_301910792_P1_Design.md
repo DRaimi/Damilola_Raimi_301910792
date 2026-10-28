@@ -1,4 +1,4 @@
-# Ecommerce platform Database Design
+# E-commerce Platform Database Design
 
 ## Entities
 
