@@ -107,8 +107,4 @@ The order details no longer repeat for every item in an order. However, the cust
 | ----- | ----- | ----- | ----- | 
 | **501** | 101 | 135.00 | 2026-10-29 | 
 
-The final design uses `order_item_id` as its primary key, rather than relying on a combined key. `customer_id`, `order_id`, and `product_id` are foreign keys. Adding an ID is a design choice, not what makes a table 3NF.
-
-Now King's email is stored once in `customer`, and product details are stored once in `product`. The IDs preserve the links, so the records can still be brought together when needed.
-
-These are the five tables in the ER diagram. The complete schema also includes unique values, date checks, and stock rules. Normalisation does not enforce these rules by itself.
+The final design uses `order_item_id` as its primary key, rather than relying on a combined key. `customer_id`, `order_id`, and `product_id` are foreign keys. Adding an ID is a design choice, not what makes a table 3NF.Now King's email is stored once in `customer`, and product details are stored once in `product`. The IDs preserve the links, so the records can still be brought together when needed. These are the five tables in the ER diagram. The complete schema also includes unique values, date checks, and stock rules. Normalisation does not enforce these rules by itself.
