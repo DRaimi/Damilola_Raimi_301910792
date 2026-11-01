@@ -67,9 +67,9 @@ MongoDB supports flexible document structures, allowing customer, order and even
 
 ## 4. Project Files
 
-* MongoDB implementation and queries: https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-4-nosql/Damilola_Raimi_301910792_P4_MongoDB.js
-* Setup and Connection Check: https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-4-nosql/Damilola_Raimi_301910792_P4_Screenshots/Damilola_Raimi_301910792_P4_MongoDBconnection.png
-* Screenshots: https://github.com/DRaimi/Damilola_Raimi_301910792/tree/main/portfolio-4-nosql/Damilola_Raimi_301910792_P4_Screenshots: MongoDBConnection and EventsAndQueries.
+* [MongoDB implementation and queries]: (https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-4-nosql/Damilola_Raimi_301910792_P4_MongoDB.js)
+* [Setup and Connection Check]: (https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-4-nosql/Damilola_Raimi_301910792_P4_Screenshots/Damilola_Raimi_301910792_P4_MongoDBconnection.png)
+* [Screenshots]: (https://github.com/DRaimi/Damilola_Raimi_301910792/tree/main/portfolio-4-nosql/Damilola_Raimi_301910792_P4_Screenshots): MongoDBConnection and EventsAndQueries.
 
 ## 5. References
 
