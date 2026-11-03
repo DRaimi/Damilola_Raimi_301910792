@@ -1,9 +1,7 @@
 -- Run this setup once. The original e-commerce tables remain unchanged. 
 -- The benchmark table is stored separately in `p2_benchmark`.
 
-
 CREATE SCHEMA p2_benchmark;
-
 -- Create 100,000 synthetic e-commerce order-history records.
 -- Existing customer and product IDs are reused.
 -- Timestamps are one hour apart.
@@ -37,26 +35,25 @@ CROSS JOIN LATERAL (
 -- Help PostgreSQL choose how to search the test table.
 ANALYZE p2_benchmark.order_history;
 ```
-## 2. Count query: Check the test data
+-- Count query: Check the test data
 
 The first query checks the total number of synthetic records. The second checks the records created on 1 January 2005.
 
-```sql
 -- Expected: 100,000 records.
 SELECT COUNT(*) AS test_rows
 FROM p2_benchmark.order_history;
 
--- Expected: 26 matching records.
+-- Expected: 24 matching records.
 SELECT COUNT(*) AS orders_on_day
 FROM p2_benchmark.order_history
 WHERE activity_at >= TIMESTAMPTZ '2005-01-01 00:00:00+00'
   AND activity_at < TIMESTAMPTZ '2005-01-02 00:00:00+00';
 ```
-## 3. Before indexing: Baseline execution plan
+-- Before indexing: Baseline execution plan
 Run the following identical query four times.
 
 * Run 1: Warm-up. Ignore the execution time.
-* Runs 2-3: Record the three execution times in milliseconds.
+* Run 2-4: Record the three execution times in milliseconds.
 
 EXPLAIN (ANALYZE, BUFFERS)
 SELECT COUNT(*) AS orders_on_day
@@ -64,9 +61,14 @@ FROM p2_benchmark.order_history
 WHERE activity_at >= TIMESTAMPTZ '2005-01-01 00:00:00+00'
   AND activity_at < TIMESTAMPTZ '2005-01-02 00:00:00+00';
 
-## 3. After indexing: Baseline execution plan
+-- After indexing: Execution plan
 Run the following identical query four times.
+-- Create a B-tree index on the activity timestamp.
+CREATE INDEX order_history_activity_at_idx
+ON p2_benchmark.order_history (activity_at);
 
+-- Refresh table statistics.
+ANALYZE p2_benchmark.order_history;
 
 EXPLAIN (ANALYZE, BUFFERS)
 SELECT COUNT(*) AS orders_on_day

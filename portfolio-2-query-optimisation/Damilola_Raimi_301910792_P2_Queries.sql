@@ -1,6 +1,6 @@
 -- Q1: Orders that are still being processed.
 SELECT c.full_name, o.order_id, p.name AS product_name, o.status
-FROM public.order o
+FROM public."order" o
 JOIN public.customer c USING (customer_id)
 JOIN public.order_item oi USING (order_id)
 JOIN public.product p USING (product_id)
@@ -17,6 +17,6 @@ ORDER BY p.product_id;
 -- LEFT JOIN also keeps customers who have not placed any orders.
 SELECT c.full_name, COUNT(o.order_id) AS total_orders
 FROM public.customer c
-LEFT JOIN public.order o USING (customer_id)
+LEFT JOIN public."order" o USING (customer_id)
 GROUP BY c.customer_id, c.full_name
 ORDER BY c.full_name;

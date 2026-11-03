@@ -17,14 +17,14 @@ The separate `p2_benchmark.order_history` table contains 100,000 generated e-com
 
 ## Performance analysis
 
-Before indexing, PostgreSQL used a Sequential Scan to search the 100,000 records and identify those matching the date range. After indexing, the execution plan is examined to determine whether PostgreSQL uses the B-tree index to locate the matching records more efficiently.The median execution time changes from 5.684 ms to 0.064 ms, while shared buffer hits change from 896 to 3.The benchmark uses synthetic data and was conducted in GitHub Codespaces, where execution times may vary. The index also requires additional storage and adds maintenance work when records are inserted, updated or deleted. The results apply to this particular query and dataset, not necessarily every query.
+Before indexing, PostgreSQL used a Sequential Scan to search the 100,000 records and identify those matching the date range. After indexing, the execution plan determines whether PostgreSQL uses the B-tree index to locate the matching records more efficiently.The median execution time changes from 6.036 ms to 0.062 ms, while shared buffer hits change from 896 to 3.The benchmark uses synthetic data and was conducted in GitHub Codespaces, where execution times may vary. The index also requires additional storage and adds maintenance work when records are inserted, updated or deleted. The results apply to this particular query and dataset, not necessarily every query.
 
 ## Files
 [SQL Queries](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-2-query-optimisation/Damilola_Raimi_301910792_P2_Queries.sql)
 
 [Test data, execution plans and Index SQL](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-2-query-optimisation/Damilola_Raimi_301910792_P2_Optimization.sql)
 
-[Screenshot](https://github.com/DRaimi/Damilola_Raimi_301910792/tree/main/portfolio-2-query-optimisation/Damilola_Raimi_301910792_P2_Screenshots) : QueryResults, BeforeIndex and AfterIndex.
+[Screenshot](https://github.com/DRaimi/Damilola_Raimi_301910792/tree/main/portfolio-2-query-optimisation/Damilola_Raimi_301910792_P2_Screenshots) : QueryResults,  AfterIndex.
 
 ## Reference
 [PostgreSQL 16 — Using Explain](https://www.postgresql.org/docs/16/using-explain.html)
