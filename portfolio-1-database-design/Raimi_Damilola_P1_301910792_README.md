@@ -26,13 +26,13 @@ The system covers a single online store using fictional customers, products, ord
 
 | File | Contents |
 | :--- | :--- |
-| [Design](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-1-database-design/Damilola_Raimi_301910792_P1_Design.md) | Entities, attributes, keys and relationships. |
-| [ER diagram](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-1-database-design/Damilola_Raimi_301910792_P1_ERDiagram.md) | The five tables and their relationships. |
-| [Normalisation](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-1-database-design/Damilola_Raimi_301910792_P1_Normalization.md) | Example tables showing 1NF, 2NF and 3NF. |
-| [Schema](Damilola_Raimi_301910792_P1_Schema.sql) | Table definitions, keys and constraints. |
-| [Sample records](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-1-database-design/Damilola_Raimi_301910792_P1_Sampledata.mdl) | Fictional customers, products, orders, items and payments. |
-| [Constraint tests](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-1-database-design/Damilola_Raimi_301910792_P1_ConstraintsTestsql.md) | Invalid inserts and the final count query. |
-| [Screenshots](https://github.com/DRaimi/Damilola_Raimi_301910792/tree/main/portfolio-1-database-design/Damilola_Raimi_301910792_Screenshots) | Saved commands and results. |
+| [Design](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-1-database-design/Raimi_Damilola_301910792_P1_Design.md) | Entities, attributes, keys and relationships. |
+| [ER diagram](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-1-database-design/Raimi_Damilola_301910792_P1_ERDiagram.md) | The five tables and their relationships. |
+| [Normalisation](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-1-database-design/Raimi_Damilola_301910792_P1_Normalization.md) | Example tables showing 1NF, 2NF and 3NF. |
+| [Schema](Raimi_Damilola_301910792_P1_Schema.sql) | Table definitions, keys and constraints. |
+| [Sample records](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-1-database-design/Raimi_Damilola_301910792_P1_Sampledata.mdl) | Fictional customers, products, orders, items and payments. |
+| [Constraint tests](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-1-database-design/Raimi_Damilola_301910792_P1_ConstraintsTestsql.md) | Invalid inserts and the final count query. |
+| [Screenshots](https://github.com/DRaimi/Raimi_Damilola_301910792/tree/main/portfolio-1-database-design/Raimi_Damilola_301910792_Screenshots) | Saved commands and results. |
 
 ## Implementation
 

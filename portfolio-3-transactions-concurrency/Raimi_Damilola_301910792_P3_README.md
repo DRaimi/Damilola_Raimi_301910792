@@ -10,7 +10,7 @@ Two PostgreSQL sessions use `READ COMMITTED` isolation. Session A reduces Mechan
 `COMMIT` saves successful changes, while `ROLLBACK` reverses uncommitted changes. `READ COMMITTED` controls visibility between concurrent transactions, and PostgreSQL row-level locking coordinates competing updates to the same product. The conditional stock update protects against overselling through this operation, but it does not automatically protect against other operations that modify stock without the same condition.
 
 ## Files
-- [Commit and rollback SQL](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-3-transactions-concurrency/Damilola_Raimi_301910792_P3_Transactions.sql)
-- [Session A SQL](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-3-transactions-concurrency/Damilola_Raimi_301910792_P3_SessionA.sql)
-- [Session B SQL](https://github.com/DRaimi/Damilola_Raimi_301910792/blob/main/portfolio-3-transactions-concurrency/Damilola_Raimi_301910792_P3_SessionB.sql)
-- [Screenshots folder](https://github.com/DRaimi/Damilola_Raimi_301910792/tree/main/portfolio-3-transactions-concurrency/Damilola_Raimi_301910792_P3_Screenshots) : CommitRollback, SessionsWaiting and ConcurrencyResult.
+- [Commit and rollback SQL](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-3-transactions-concurrency/Raimi_Damilola_301910792_P3_Transactions.sql)
+- [Session A SQL](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-3-transactions-concurrency/Raimi_Damilola_301910792_P3_SessionA.sql)
+- [Session B SQL](https://github.com/DRaimi/Raimi_Damilola_301910792/blob/main/portfolio-3-transactions-concurrency/Raimi_Damilola_301910792_P3_SessionB.sql)
+- [Screenshots folder](https://github.com/DRaimi/Raimi_Damilola_301910792/tree/main/portfolio-3-transactions-concurrency/Raimi_Damilola_301910792_P3_Screenshots) : CommitRollback, SessionsWaiting and ConcurrencyResult.

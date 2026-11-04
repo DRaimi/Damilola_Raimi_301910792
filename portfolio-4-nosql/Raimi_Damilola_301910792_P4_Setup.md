@@ -14,7 +14,7 @@ mongosh "mongodb://127.0.0.1:27017"
 
 db.version() returns 8.0.34 and db.runCommand({ ping: 1 }) returns { ok: 1 }.
 
-![MongoDB connection](Screenshots/Damilola_Raimi_301910792_P4_MongoDBconnection.png)
+![MongoDB connection](Screenshots/Raimi_Damilola_301910792_P4_MongoDBconnection.png)
 
 ## Reference
 
